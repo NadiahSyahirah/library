@@ -1,0 +1,440 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body {
+  background: url('library.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Blur overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Content Container */
+.landing-container {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 40px 30px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Logo */
+.landing-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.3em;
+  margin-bottom: 10px;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 1.1em;
+  color: #f0f0f0;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.enter-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #5a2ea0;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1em;
+  transition: background 0.3s ease, transform 0.2s ease;
+} 
+.enter-btn:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #edeeef;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+    color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header and navigation */
+header {
+    background-color:rgba(247, 244, 244, 0.4);
+    padding: 20px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Resume Card */
+.resume-card {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-column, .right-column {
+    padding: 30px;
+    flex: 1 1 50%;
+}
+
+.left-column {
+    text-align: center;
+    background-color: #e6f0ff;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #f2f4f7;
+}
+
+.left-column h2 {
+    font-size: 24px;
+    color: #f2f4f7;
+}
+
+.right-column h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+.right-column p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* === Contact Page Styles === */
+.contact-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-container h1 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f7f8f9;
+    outline: none;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #004080;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color:#003366;
+}
+
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+    color: #333; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header and navigation */
+header {
+    background-color: #e8ecf0;
+    padding: 20px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Resume Card */
+.resume-card {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.left-column, .right-column {
+    padding: 30px;
+    flex: 1 1 50%;
+}
+
+.left-column {
+    text-align: center;
+    background-color: #e6f0ff;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #004080;
+}
+
+.left-column h2 {
+    font-size: 24px;
+    color: #004080;
+}
+
+.right-column h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+.right-column p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+   width:100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #e6f0ff;
+}
+
+.card h3 {
+  margin: 0;
+}
